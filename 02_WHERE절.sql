@@ -66,6 +66,11 @@ WHERE commission_pct IS NOT NULL;
 -- AND, OR
 -- AND가 OR보다 연산 순서가 빠름.
 SELECT * FROM employees
+WHERE job_id = 'IT_PROG'   
+OR job_id = 'FI_MGR'      
+and salary >= 6000;
+
+SELECT * FROM employees
 WHERE (job_id = 'IT_PROG'   --and가 연산순서가 빠르니 괄호를 쳐줘서
 OR job_id = 'FI_MGR')       --우선순위를 높이자.
 and salary >= 6000;
