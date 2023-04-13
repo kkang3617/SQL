@@ -47,7 +47,7 @@ SELECT ROUND(sysdate, 'year') FROM dual; --년(6월 말) 기준으로 반올림.
 SELECT ROUND(sysdate, 'month') FROM dual; --월 기준으로 반올림.
 SELECT ROUND(sysdate, 'day') FROM dual; --일 기준으로 반올림. (해당 주의 일요일 날짜 달력상 한줄)
 
-SELECT TRUNC(sysdate) FROM dual; --정오를 기준으로 반올림.
-SELECT TRUNC(sysdate, 'year') FROM dual; --년(6월 말) 기준으로 반올림.
-SELECT TRUNC(sysdate, 'month') FROM dual; --월 기준으로 반올림.
-SELECT TRUNC(sysdate, 'day') FROM dual; --일 기준으로 반올림. (해당 주의 일요일 날짜 달력상 한줄)
+SELECT TRUNC(sysdate) FROM dual; --정오를 기준으로 절사.
+SELECT TRUNC(sysdate, 'year') FROM dual; --년(6월 말) 기준으로 절사.
+SELECT TRUNC(sysdate, 'month') FROM dual; --월 기준으로 절사.
+SELECT TRUNC(sysdate, 'day') FROM dual; --일 기준으로 절사. (해당 주의 일요일 날짜 달력상 한줄)
